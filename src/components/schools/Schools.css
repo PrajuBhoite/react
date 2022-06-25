@@ -1,0 +1,60 @@
+.schools {
+  max-width: 500px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 1em 2em;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.school-list {
+  padding: 0;
+  list-style: none;
+}
+.school-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+}
+.school-item + .school-item {
+  border-top: 1px solid #dddddd;
+}
+.school-due {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+}
+.school-action {
+  display: inline-flex;
+  gap: 8px;
+}
+.btn-delete {
+  color: tomato;
+}
+.school-action > * {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: transform 350ms ease-out;
+}
+.school-action > *:hover {
+  transform: scale(1.1)
+}
+.school-action a {
+  text-decoration: none;
+  color: blue;
+}
+.schools-item--completed {
+  text-decoration: line-through;
+}
