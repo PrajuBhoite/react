@@ -5,10 +5,13 @@ export const login = (user) => {
   return async (dispatch) => {
     dispatch(loginStart());
     try {
-      const res = await axios.post(`http://localhost:3001/api/login`, user);
+
+      const res = await axios.post(`http://localhost:3001/api/auth/login`, user);
+      // debugger
+    
       dispatch(
         loginSuccess({ user: res.data.data.user, token: res.data.data.token })
-      );
+      );  return(res.data.success)
     } catch (error) {
       dispatch(loginFailure({ error: error.response.data }));
     }

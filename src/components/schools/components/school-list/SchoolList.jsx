@@ -7,7 +7,7 @@ export const SchoolList = ({ schools, handleSchoolDelete }) => {
   return (
     <ul className="school-list">
       {schools.map((school) => (
-        <SchoolItem school={school} key={school._id} onShoolDelete={onSchoolDelete} />
+        <SchoolItem school={school} key={school._id} onSchoolDelete={onSchoolDelete} />
       ))}
     </ul>
   );

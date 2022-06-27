@@ -12,10 +12,10 @@ export const Navbar = () => (
       <NavLink className="navbar-link" to={"/schools"}>
         Schools
       </NavLink>
-    </li>
+</li>
     <li className="navbar-item">
       <NavLink className="navbar-link" to={"/greet"}>
-        Greet
+       Greet
       </NavLink>
     </li>
     <li className="navbar-item">
@@ -28,5 +28,15 @@ export const Navbar = () => (
         Sign Up
       </NavLink>
     </li>
+    <li className="navbar-item ">
+<NavLink className=" dropdown navbar-link" to={"/school"}>
+        School List
+        <div class="dropdown-content">
+  <a href="https://blog.hubspot.com/">English Medium School</a>
+  <a href="https://academy.hubspot.com/" >High School</a>
+  <a href="https://www.youtube.com/user/hubspot">Gurukul school</a>
+  </div>
+      </NavLink>
+</li>
   </menu>
 );

@@ -1,15 +1,19 @@
 .app {
     min-height: 100vh;
-    background-color: #e197f37e;
     display: grid;
     grid-template-rows: 70px 1fr;
+   background-color: rgb(245, 197, 247);
 }
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
+    background:linear-gradient(90deg, #4b6cb7 0%, #182848 100%) ;
 }
 .main {
     display: grid;
     place-items: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+ 
 }

@@ -5,7 +5,7 @@ import axios from "axios";
 export const SchoolEdit = () => {
   const navigate = useNavigate();
   const [school, setSchool] = useState({ school: "" });
-  const { id: schoolId } = useParams();
+  const { id : schoolId } = useParams();
 
   useEffect(() => {
     const token = localStorage.getItem("accessToken");
@@ -23,7 +23,7 @@ export const SchoolEdit = () => {
       .catch((error) => console.error(error));
   }, [schoolId]);
 
-  const handleTodoEdit = (e) => {
+  const handleSchoolEdit = (e) => {
     e.preventDefault();
     if (school.school.trim().length === 0) {
       return;
@@ -48,7 +48,7 @@ export const SchoolEdit = () => {
   };
 
   return (
-    <form className="school-form spaced-form" onSubmit={handleTodoEdit}>
+    <form className="school-form spaced-form" onSubmit={handleSchoolEdit}>
       <div className="input-group">
         <label htmlFor="school">Enter your school name</label>
         <input

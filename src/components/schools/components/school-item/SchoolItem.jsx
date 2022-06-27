@@ -12,7 +12,7 @@ export const SchoolItem = ({ school, onSchoolDelete }) => {
       className={`school-item ${school.isCompleted ? "school-item--completed" : ""}`}
     >
       <div className="school-content">
-        {school.school}
+      {school.schoolname}
       </div>
       <div className="school-action">
         <Link to={"/schools/" + school._id}>

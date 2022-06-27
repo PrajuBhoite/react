@@ -48,6 +48,18 @@ export const SignUp = () => {
       >
         <h1 className="text-center page-title">Sign Up</h1>
         <div className="input-group">
+          <label htmlFor="name">Title</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Mr,Miss"
+            className="input-control"
+            value={user.title}
+            onChange={handleOnChange}
+          />
+        </div>
+        <div className="input-group">
           <label htmlFor="name">Enter your name</label>
           <input
             type="text"
